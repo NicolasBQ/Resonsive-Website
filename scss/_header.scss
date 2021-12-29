@@ -1,0 +1,88 @@
+.navegation {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: $nav-color;
+
+    &__links {
+        width: 100%;
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+        text-align: center;
+        transform: translateY(-1000px);
+        @include transition;
+
+        &--item {
+            text-transform: uppercase;
+            padding: 2rem 0;
+
+            &--btn {
+                padding: 0.7em 1.5em;
+                background-color: $accent-color;
+                display: inline;
+                border-radius: 1.5em;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            &--link:hover{
+                color: $accent-color;
+            }
+
+            &--active {
+                visibility: visible;
+            }
+        }
+
+        &--active {
+            transform: translateY(100px);
+            height: 100vh;
+            visibility: visible;
+        }
+    }
+
+}
+
+.burguer-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top:.8rem;
+    right: 2rem; 
+    cursor: pointer;
+
+    &__burguer {
+        position: absolute;
+        height: 3px;
+        width: 20px;
+        top: 18px;
+        right: 10px; 
+        background-color: $white;
+
+        &::before {
+            content: '';
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            top: -8px;
+            background-color: $white;
+        }
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            top: 8px;
+            background-color: $white;
+        }
+    }
+}
+
+.header__section {
+    @include main-sections;
+}

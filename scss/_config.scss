@@ -1,0 +1,43 @@
+// Color
+$nav-color:#2E323F;
+$primary-color:#3B4050;
+$text-color:#6F737F;
+$accent-color:#A59678;
+$white:#fff;
+
+//Text
+$title:'Oswald', sans-serif;
+$text:'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin main-sections {
+    background-color: $primary-color;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+@mixin transition {
+    transition: all 0.8s ease-in-out;
+}
+
+@mixin for-tablet-up {
+    @media screen and (min-width:700px) {
+        @content;
+    }
+}
+
+@mixin for-laptop-up {
+    @media screen and (min-width:1000px) {
+        @content;
+    }
+}

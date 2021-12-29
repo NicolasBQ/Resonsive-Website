@@ -1,1 +1,156 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navegation {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #2E323F;
+}
+
+.navegation__links {
+  width: 100%;
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+  text-align: center;
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.navegation__links--item {
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.navegation__links--item--btn {
+  padding: 0.7em 1.5em;
+  background-color: #A59678;
+  display: inline;
+  border-radius: 1.5em;
+}
+
+.navegation__links--item--btn:hover {
+  opacity: 0.7;
+}
+
+.navegation__links--item--link:hover {
+  color: #A59678;
+}
+
+.navegation__links--item--active {
+  visibility: visible;
+}
+
+.navegation__links--active {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  height: 100vh;
+  visibility: visible;
+}
+
+.burguer-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3B4050;
+  position: absolute;
+  top: .8rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.burguer-container__burguer {
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 18px;
+  right: 10px;
+  background-color: #fff;
+}
+
+.burguer-container__burguer::before {
+  content: '';
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  top: -8px;
+  background-color: #fff;
+}
+
+.burguer-container__burguer::after {
+  content: '';
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  top: 8px;
+  background-color: #fff;
+}
+
+.header__section {
+  background-color: #3B4050;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.main__image {
+  width: 100%;
+}
+
+.text-accent {
+  color: #A59678;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: #6F737F;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 1.125rem;
+}
+
+.medium {
+  font-size: 1.5rem;
+}
+
+.large {
+  font-size: 1.875rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */

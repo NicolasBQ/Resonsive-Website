@@ -1,0 +1,54 @@
+@import './config';
+@import './header';
+@import './content';
+
+//Text Classes
+.text-accent {
+    color:$accent-color;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-gray {
+    color:$text-color;
+}
+
+.title {
+    font-family: $title;
+}
+
+.text {
+    font-family: $text;
+    line-height: 1.5;
+}
+
+.small {
+    font-size: 1.125rem;
+}
+
+.medium {
+    font-size: 1.5rem;
+}
+
+.large {
+    font-size: 1.875rem;
+}
+
+//Container
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//a tag
+.link {
+    text-decoration: none;
+}
+
+//list style
+.list {
+    list-style-type: none;
+}
