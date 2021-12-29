@@ -1,0 +1,7 @@
+.footer {
+    @include main-sections;
+
+    &__title {
+        text-align: center;
+    }
+}
