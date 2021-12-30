@@ -1,7 +1,18 @@
 .footer {
     @include main-sections;
+    
+    &__container {
+        margin-top: 2rem;
+    }
 
-    &__title {
-        text-align: center;
+    &__navegation {
+        margin-bottom: 1rem;
+        &--list {
+            &--item {
+                padding: 0.2rem 0;
+            }
+        }
     }
 }
+
+

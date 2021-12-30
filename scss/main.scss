@@ -3,6 +3,7 @@
 @import './content';
 @import './cards';
 @import './footer';
+@import './media';
 
 //Text Classes
 .text-accent {
@@ -19,11 +20,17 @@
 
 .title {
     font-family: $title;
+    margin-bottom: 1rem;
 }
 
 .text {
     font-family: $text;
     line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.xsmall {
+    font-size: 1rem;
 }
 
 .small {
@@ -53,4 +60,19 @@
 //list style
 .list {
     list-style-type: none;
+}
+
+//Text-center
+.text-center {
+    text-align: center;
+}
+
+//Hover text
+.hover-text:hover {
+    color: $accent-color;
+}
+
+//Button Opacity 
+.hover-btn:hover {
+    opacity: 0.7;
 }

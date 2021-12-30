@@ -22,6 +22,11 @@ body {
     padding: 0;
 }
 
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin main-sections {
     background-color: $primary-color;
     width: 100%;
@@ -33,7 +38,7 @@ body {
 }
 
 @mixin for-tablet-up {
-    @media screen and (min-width:700px) {
+    @media screen and (min-width:800px) {
         @content;
     }
 }

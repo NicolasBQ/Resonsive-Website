@@ -22,8 +22,6 @@ body {
   width: 100%;
   height: 0;
   margin: 0;
-  visibility: hidden;
-  text-align: center;
   -webkit-transform: translateY(-1000px);
           transform: translateY(-1000px);
   -webkit-transition: all 0.6s ease-in-out;
@@ -42,23 +40,10 @@ body {
   border-radius: 1.5em;
 }
 
-.navegation__links--item--btn:hover {
-  opacity: 0.7;
-}
-
-.navegation__links--item--link:hover {
-  color: #A59678;
-}
-
-.navegation__links--item--active {
-  visibility: visible;
-}
-
 .navegation__links--active {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
   height: 100vh;
-  visibility: visible;
 }
 
 .burguer-container {
@@ -110,6 +95,8 @@ body {
 }
 
 .header__section--text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
@@ -130,6 +117,7 @@ body {
 
 .main__image {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .aside {
@@ -143,9 +131,8 @@ body {
   background-color: #3B4050;
   width: 100%;
   padding: 3rem 0;
-  padding: 0.4rem 2rem;
+  padding: 2rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .cards {
@@ -155,8 +142,8 @@ body {
   background-color: #f1f1f1;
 }
 
-.cards--container {
-  text-align: center;
+.cards__section {
+  margin-bottom: 1.5rem;
 }
 
 .footer {
@@ -165,8 +152,109 @@ body {
   padding: 3rem 0;
 }
 
-.footer__title {
-  text-align: center;
+.footer__container {
+  margin-top: 2rem;
+}
+
+.footer__navegation {
+  margin-bottom: 1rem;
+}
+
+.footer__navegation--list--item {
+  padding: 0.2rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .aside__section + .aside__section {
+    margin-left: 1rem;
+  }
+  .footer__container--navegation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container--center {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navegation {
+    height: 8vh;
+  }
+  .navegation__links {
+    height: auto;
+    margin-left: auto;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navegation__links--item {
+    padding: 0.2rem 1rem;
+  }
+  .burguer-container {
+    display: none;
+  }
+  .header__section {
+    height: 92vh;
+  }
+  .header__section--title {
+    width: 45%;
+    font-size: 4.5rem;
+    margin-right: 10%;
+  }
+  .header__section--info {
+    width: 45%;
+  }
+  .cards__section + .cards__section {
+    margin-left: 1rem;
+  }
+  .main {
+    width: 60%;
+  }
+  .aside {
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside__section + .aside__section {
+    margin-left: 0;
+  }
+  .footer__container {
+    width: 45%;
+    text-align: left;
+  }
 }
 
 .text-accent {
@@ -183,11 +271,17 @@ body {
 
 .title {
   font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .text {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.xsmall {
+  font-size: 1rem;
 }
 
 .small {
@@ -214,5 +308,17 @@ body {
 
 .list {
   list-style-type: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hover-text:hover {
+  color: #A59678;
+}
+
+.hover-btn:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */

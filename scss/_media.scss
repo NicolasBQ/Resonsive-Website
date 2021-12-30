@@ -1,0 +1,82 @@
+@include for-tablet-up {
+    .aside {
+        @include flex;
+
+        &__section + &__section {
+            margin-left: 1rem;
+        }
+    }
+
+    .footer__container--navegation {
+        @include flex;
+        margin-top: 2rem;
+    }
+}
+
+@include for-laptop-up {
+    .container {
+        @include flex;
+
+        &--center {
+            height: 100%;
+            align-items: center;
+        }
+    }
+
+    .navegation {
+        height: 8vh;
+        &__links {
+            height: auto;
+            margin-left: auto;
+            transform: translateY(0);
+            visibility: visible;
+            display: flex;
+            justify-content: flex-end;
+    
+            &--item {
+                padding: 0.2rem 1rem;
+            }
+        }
+    }
+
+    .burguer-container {
+        display: none;
+    }
+
+    .header__section {
+        height: 92vh;
+
+        &--title {
+            width: 45%;
+            font-size: 4.5rem;
+            margin-right: 10%;
+        }
+
+        &--info {
+            width: 45%;
+        }
+
+    }
+
+    .cards__section + .cards__section {
+        margin-left: 1rem;
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .aside {
+        width: 30%;
+        flex-direction: column;
+
+        &__section + &__section {
+            margin-left: 0;
+        }
+    }
+
+    .footer__container {
+        width: 45%;
+        text-align: left;
+    }
+}

@@ -2,7 +2,7 @@
   @include main-sections;
   background-color: #f1f1f1;
 
-  &--container {
-      text-align: center;
+  &__section {
+    margin-bottom: 1.5rem;
   }
 }

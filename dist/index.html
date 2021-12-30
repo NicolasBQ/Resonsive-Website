@@ -11,41 +11,41 @@
 <body>
     <header class="header">
         <nav class="navegation">
-            <div class="container container--navegation">
+            <div class="container container--center">
                 <a href=""><img src="./img/logo.svg" alt="Website Logo" class="navegation__logo"></a>
                 <div class="burguer-container">
                     <span class="burguer-container__burguer"></span>
                 </div>
-                <ul class="navegation__links">
-                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white">home</a></li>
-                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white">about</a></li>
-                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white">contact</a></li>
-                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white">sign in</a></li>
-                    <li class="navegation__links--item navegation__links--item--btn list"><a href="#" class="link title small text-white">sign up</a></li>
+                <ul class="navegation__links text-center">
+                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white hover-text">home</a></li>
+                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white hover-text">about</a></li>
+                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white hover-text">contact</a></li>
+                    <li class="navegation__links--item list"><a href="#" class="navegation__links--item--link link title small text-white hover-text">sign in</a></li>
+                    <li class="navegation__links--item navegation__links--item--btn list hover-btn"><a href="#" class="link title small text-white">sign up</a></li>
                 </ul>
             </div>
         </nav>
 
         <section class="header__section">
-            <div class="container">
+            <div class="container container--center">
                 <h1 class="header__section--title title text-white">
                     Responsive layouts <span class="text-accent">don't have to be a struggle</span>
                 </h1>
-                <div>
-                    <p class="header__section--text text medium text-gray">
+                <div class="header__section--info">
+                    <p class="header__section--text medium text-gray">
                         Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua
                     </p>
-                    <a href="#" class="header__section--cta link title medium text-white">i want to learn</a>
+                    <a href="#" class="header__section--cta link title medium text-white hover-btn">i want to learn</a>
                 </div>
             </div>
         </section>
     </header>
 
     <article class="cards">
-        <div class="container cards--container">
-            <section>
+        <div class="container text-center">
+            <section class="cards__section">
                 <h3 class="title large text-accent">Mobile-first</h3>
                 <p class="text small text-gray">
                     Lorem ipsum dolor sit amet,
@@ -56,7 +56,7 @@
                 </p>
             </section>
             
-            <section>
+            <section class="cards__section">
                 <h3 class="title large text-accent">Efficient</h3>
                 <p class="text small text-gray">
                     Lorem ipsum dolor sit amet,
@@ -67,7 +67,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="cards__section">
                 <h3 class="title large text-accent">Done right</h3>
                 <p class="text small text-gray">
                     Lorem ipsum dolor sit amet,
@@ -96,7 +96,7 @@
                 <img src="./img/the-image.jpg" alt="websites sketches" class="main__image">
                 
 
-                <p class="text text-gray">
+                <p class="text text-gray small">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                     enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
@@ -106,7 +106,7 @@
             </article>
 
             <aside class="aside">
-                <section class="aside__section">
+                <section class="aside__section text-center">
                     <h3 class="title large text-white">Break it down</h3>
                     <p class="text small text-white">
                         Lorem ipsum dolor sit amet,
@@ -116,8 +116,8 @@
                     </p>
                 </section>
 
-                <section class="aside__section">
-                    <h3 class="title large text-white">Break it down</h3>
+                <section class="aside__section text-center">
+                    <h3 class="title large text-white">Work your way up</h3>
                     <p class="text small text-white">
                         Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
@@ -126,7 +126,7 @@
                     </p>
                 </section>
 
-                <section class="aside__section">
+                <section class="aside__section text-center">
                     <h3 class="title large text-white">Break it down</h3>
                     <p class="text small text-white">
                         Lorem ipsum dolor sit amet,
@@ -139,45 +139,45 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer text-center">
         <h2 class="footer__title title large text-white">Just scratchig the surface</h2>
         <div class="container">
-            <div>
+            <div class="footer__container">
                 <h4 class="title text-accent small">About our company</h4>
-                <p class="text text-white small">
+                <p class="text text-white xsmall">
                     Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
             </div>
 
-            <div>
-                <nav>
-                    <h4>Getting around</h4>
-                    <ul>
-                        <li class="list"><a href="#" class="link">Home</a></li>
-                        <li class="list"><a href="#" class="link">About</a></li>
-                        <li class="list"><a href="#" class="link">Contact</a></li>
+            <div class="footer__container footer__container--navegation">
+                <nav class="footer__navegation">
+                    <h4 class="title text-accent small">Getting around</h4>
+                    <ul class="footer__navegation--list">
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">Home</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">About</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">Contact</a></li>
                     </ul>
                 </nav>
 
-                <nav>
-                    <h4>Other things</h4>
-                    <ul>
-                        <li class="list"><a href="#" class="link">Lorem ipsum</a></li>
-                        <li class="list"><a href="#" class="link">dolor</a></li>
-                        <li class="list"><a href="#" class="link">sit amet</a></li>
-                        <li class="list"><a href="#" class="link">consectetur</a></li>
+                <nav class="footer__navegation">
+                    <h4 class="title text-accent small">Other things</h4>
+                    <ul class="footer__navegation--list">
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">Lorem ipsum</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">dolor</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">sit amet</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">consectetur</a></li>
                     </ul>
                 </nav>
 
-                <nav>
-                    <h4>And More</h4>
-                    <ul>
-                        <li class="list"><a href="#" class="link">Lorem ipsum</a></li>
-                        <li class="list"><a href="#" class="link">dolor</a></li>
-                        <li class="list"><a href="#" class="link">sit amet</a></li>
-                        <li class="list"><a href="#" class="link">consectetur</a></li>
+                <nav class="footer__navegation">
+                    <h4 class="title text-accent small">And More</h4>
+                    <ul class="footer__navegation--list">
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">Lorem ipsum</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">dolor</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">sit amet</a></li>
+                        <li class="footer__navegation--list--item list"><a href="#" class="link text text-white xsmall hover-text">consectetur</a></li>
                     </ul>
                 </nav>
             </div>
